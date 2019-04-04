@@ -67,15 +67,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ExamplePrime.aspx" />
     <Content Include="getMax.aspx" />
     <Content Include="GetTriangularArea.aspx" />
     <Content Include="HelloWorld.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="IDCard.aspx" />
     <Content Include="Output.aspx" />
+    <Content Include="PrintChar.aspx" />
+    <Content Include="SolveP.aspx" />
+    <Content Include="solveX.aspx" />
+    <Content Include="Sqrt.aspx" />
+    <Content Include="SrtingOffset.aspx" />
+    <Content Include="Test.aspx" />
     <Content Include="var.aspx" />
     <Content Include="Web.config" />
+    <Content Include="xe10.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExamplePrime.aspx.cs">
+      <DependentUpon>ExamplePrime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamplePrime.aspx.designer.cs">
+      <DependentUpon>ExamplePrime.aspx</DependentUpon>
+    </Compile>
     <Compile Include="getMax.aspx.cs">
       <DependentUpon>getMax.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -100,6 +116,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IDCard.aspx.cs">
+      <DependentUpon>IDCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IDCard.aspx.designer.cs">
+      <DependentUpon>IDCard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Output.aspx.cs">
       <DependentUpon>Output.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -107,13 +130,62 @@
     <Compile Include="Output.aspx.designer.cs">
       <DependentUpon>Output.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PrintChar.aspx.cs">
+      <DependentUpon>PrintChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintChar.aspx.designer.cs">
+      <DependentUpon>PrintChar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolveP.aspx.cs">
+      <DependentUpon>SolveP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SolveP.aspx.designer.cs">
+      <DependentUpon>SolveP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="solveX.aspx.cs">
+      <DependentUpon>solveX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="solveX.aspx.designer.cs">
+      <DependentUpon>solveX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sqrt.aspx.cs">
+      <DependentUpon>Sqrt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sqrt.aspx.designer.cs">
+      <DependentUpon>Sqrt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SrtingOffset.aspx.cs">
+      <DependentUpon>SrtingOffset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SrtingOffset.aspx.designer.cs">
+      <DependentUpon>SrtingOffset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="var.aspx.cs">
       <DependentUpon>var.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="var.aspx.designer.cs">
       <DependentUpon>var.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xe10.aspx.cs">
+      <DependentUpon>xe10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xe10.aspx.designer.cs">
+      <DependentUpon>xe10.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

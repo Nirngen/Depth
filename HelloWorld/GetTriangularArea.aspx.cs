@@ -28,7 +28,8 @@ namespace HelloWorld
             {
                 double p = (a + b + c) * 0.5;
                 double s = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
-
+            //注意，这里只判断了a,b做直角边的情况，故而是错误的。
+            //替代方法，1.if内多增加条件 2.排序后赋值 3.三角余弦乘积与0比较+bool型替代if
                 if (a * a + b * b > c * c)
                     d1 = "锐角";
                 else if (a * a + b * b == c * c)
