@@ -72,7 +72,10 @@
     <Content Include="GetTriangularArea.aspx" />
     <Content Include="HelloWorld.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="IDCard.aspx" />
+    <Content Include="IsArmstrongNumber.aspx" />
+    <Content Include="IsLeapYear.aspx" />
+    <Content Include="JudgeLeapYear.aspx" />
+    <Content Include="NewIDCard.aspx" />
     <Content Include="Output.aspx" />
     <Content Include="PrintChar.aspx" />
     <Content Include="SolveP.aspx" />
@@ -116,12 +119,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IDCard.aspx.cs">
-      <DependentUpon>IDCard.aspx</DependentUpon>
+    <Compile Include="IsArmstrongNumber.aspx.cs">
+      <DependentUpon>IsArmstrongNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="IDCard.aspx.designer.cs">
-      <DependentUpon>IDCard.aspx</DependentUpon>
+    <Compile Include="IsArmstrongNumber.aspx.designer.cs">
+      <DependentUpon>IsArmstrongNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IsLeapYear.aspx.cs">
+      <DependentUpon>IsLeapYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IsLeapYear.aspx.designer.cs">
+      <DependentUpon>IsLeapYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JudgeLeapYear.aspx.cs">
+      <DependentUpon>JudgeLeapYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JudgeLeapYear.aspx.designer.cs">
+      <DependentUpon>JudgeLeapYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewIDCard.aspx.cs">
+      <DependentUpon>NewIDCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewIDCard.aspx.designer.cs">
+      <DependentUpon>NewIDCard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Output.aspx.cs">
       <DependentUpon>Output.aspx</DependentUpon>

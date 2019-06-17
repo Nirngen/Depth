@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.AITools.Tvbboy">
+      <HintPath>..\Main\bin\Common.AITools.Tvbboy.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -69,6 +72,13 @@
   <ItemGroup>
     <Content Include="Altname.aspx" />
     <Content Include="DatabaseDDL.aspx" />
+    <Content Include="ExampleDatabaseInsertOne.aspx" />
+    <Content Include="ExampleRecursionDB.aspx" />
+    <Content Include="InsertDistance.aspx" />
+    <Content Include="K-Means.aspx" />
+    <Content Include="NewDijkstra.aspx" />
+    <Content Include="RecursionOffspring.aspx" />
+    <Content Include="test.aspx" />
     <Content Include="Try.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -87,8 +97,57 @@
     <Compile Include="DatabaseDDL.aspx.designer.cs">
       <DependentUpon>DatabaseDDL.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExampleDatabaseInsertOne.aspx.cs">
+      <DependentUpon>ExampleDatabaseInsertOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleDatabaseInsertOne.aspx.designer.cs">
+      <DependentUpon>ExampleDatabaseInsertOne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleRecursionDB.aspx.cs">
+      <DependentUpon>ExampleRecursionDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleRecursionDB.aspx.designer.cs">
+      <DependentUpon>ExampleRecursionDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertDistance.aspx.cs">
+      <DependentUpon>InsertDistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertDistance.aspx.designer.cs">
+      <DependentUpon>InsertDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="K-Means.aspx.cs">
+      <DependentUpon>K-Means.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="K-Means.aspx.designer.cs">
+      <DependentUpon>K-Means.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewDijkstra.aspx.cs">
+      <DependentUpon>NewDijkstra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewDijkstra.aspx.designer.cs">
+      <DependentUpon>NewDijkstra.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecursionOffspring.aspx.cs">
+      <DependentUpon>RecursionOffspring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecursionOffspring.aspx.designer.cs">
+      <DependentUpon>RecursionOffspring.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SQLHelper.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Try.aspx.cs">
       <DependentUpon>Try.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
