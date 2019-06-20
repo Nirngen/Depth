@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ExampleGeoMapLabel.aspx" />
+    <Content Include="FootPrint.aspx" />
     <Content Include="Try.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -75,11 +76,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExampleGeoMapLabel.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>ExampleGeoMapLabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExampleGeoMapLabel.aspx.designer.cs">
       <DependentUpon>ExampleGeoMapLabel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FootPrint.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>FootPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FootPrint.aspx.designer.cs">
+      <DependentUpon>FootPrint.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLHelper.cs" />

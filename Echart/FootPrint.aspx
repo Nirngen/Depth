@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleGeoMapLabel.aspx.cs" Inherits="ProjectEchart.ExampleGeoMapLabel" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FootPrint.aspx.cs" Inherits="ProjectEchart.FootPrint" %>
 
 <!DOCTYPE html>
 
@@ -31,18 +31,12 @@
                     var placeList1 = [
                     <% =jsstirng%>                                                      
                     ];
-                    var placeList2 = [
-                    <% =jsli%>                  
-                    ];
-                    //如果只需输出一个点集，可删去list2，下data2、len2、data：，series同理
                     var chart = echarts.init(document.getElementById('main'), null, {
 
                     });
 
                     var data = [];
-                    var data2 = [];
                     var len = placeList1.length; 
-                    var len2 = placeList2.length; 
                     var randomValue = function (geoCoord) {
                         return [
                             geoCoord[0],
@@ -59,17 +53,9 @@
                         });
 
                     }
-                    while (len2--) {
-                        var geoCoord = placeList2[len2 % placeList2.length].geoCoord;
-                      
-                        data2.push({
-                            name: placeList2[len2 % placeList2.length].name,
-                            value: randomValue(geoCoord)
-                        });
-                    }
                     chart.setOption({
                         legend: {
-                            data: ['唐人', '李世民父子']
+                            data: ['足迹']
                         },
                         geo: [{
                             map: 'china',
@@ -92,20 +78,12 @@
                                            
                            {
                             coordinateSystem: 'geo',
-                            name: '唐人',
+                            name: '足迹',
                             type: 'scatter',
                             symbolSize: function (val) {
                                 return val[2] * 20;
                             },
                             data: data
-                        }, {
-                            coordinateSystem: 'geo',
-                            name: '李世民父子',
-                            type: 'scatter',
-                            symbolSize: function (val) {
-                                return val[2] * 20;
-                            },
-                            data: data2
                         }]
                     });
 

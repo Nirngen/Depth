@@ -38,7 +38,7 @@ namespace Database
                 if (sdr.Read())
                 {
                     Response.Write("TA的曾用名：");
-                    Response.Write(string.Format("{0}", sdr["c_alt_name_chn"], ToString()) + "</br>");
+                    Response.Write(string.Format("{0}", sdr["c_alt_name_chn"].ToString()) + "</br>");
                     //注意read（）是光标移动，如果不在这里write，只会输出第二个及之后的曾用名
                     while (sdr.Read())
                     {

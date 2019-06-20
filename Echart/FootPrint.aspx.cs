@@ -8,17 +8,14 @@ using System.Web.UI.WebControls;
 using SQL;
 namespace ProjectEchart
 {
-    public partial class ExampleGeoMapLabel : System.Web.UI.Page
+    public partial class FootPrint : System.Web.UI.Page
     {
         public DataTable dt;
         public string jsstirng = "";
-        public string jsli = "";
        protected void Page_Load(object sender, EventArgs e)
         {
             SQLHelper sh = new SQLHelper();
-            string sql = "select b.c_name_chn as c_name_chn, c.c_addr_id,c.x_coord as x_coord ,c.y_coord as y_coord from [20170829CBDBavBase].dbo.biog_addr_data A,[20170829CBDBavBase].dbo.biog_main B,[20170829CBDBavBase].dbo.ADDR_CODES c";
-            sql+=" where A.c_personid = B.c_personid AND c.c_addr_id = a.c_addr_id and ";
-            sql+=" ((b.c_deathyear<=907 and  b.c_birthyear>=618) or (b.c_deathyear>=618 and b.c_birthyear<=618)) and c.x_coord is not null and c.y_coord is not null";
+            string sql = "select d.c_name_chn,d.x_coord,d.y_coord from [20170829CBDBavBase].dbo.BIOG_ADDR_CODES c inner join ( select a.c_addr_type,b.c_name_chn,x_coord,y_coord from [20170829CBDBavBase].dbo.BIOG_ADDR_DATA a inner join [20170829CBDBavBase].dbo.ADDRESSES b on a.c_addr_id = b.c_addr_id where a.c_personid = ( select c_personid from [20170829CBDBavBase].dbo.BIOG_MAIN where c_name_chn = '呂祖謙' ) )d on c.c_addr_type = d.c_addr_type group by d.c_name_chn,d.x_coord,d.y_coord,c.c_addr_desc_chn";
             DataSet ds = new DataSet();
             try
             {
@@ -29,11 +26,6 @@ namespace ProjectEchart
                 {
                     //  jsstirng += string.Format(@"{name:{0}'', geoCoord:[{1}, {2}]},", dr["c_name_chn"].ToString(), dr["x_coord"].ToString(), dr["y_coord"].ToString());
                    jsstirng += string.Format(@"{{name:'{0}',geoCoord:[{1}, {2}]}},", dr["c_name_chn"].ToString(), dr["x_coord"].ToString(), dr["y_coord"].ToString());
-                   if (dr["c_name_chn"].ToString() == "李世民" || dr["c_name_chn"].ToString() == "李淵" || dr["c_name_chn"].ToString() == "李渊")
-                    {
-                        jsli += string.Format(@"{{name:'{0}',geoCoord:[{1}, {2}]}},", dr["c_name_chn"].ToString(), dr["x_coord"].ToString(), dr["y_coord"].ToString());
-                      
-                    }
                 }
             }
             catch (Exception ex)
